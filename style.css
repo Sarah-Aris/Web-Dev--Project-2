@@ -1,0 +1,333 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+header {
+  position: fixed;
+  color: white;
+  background-color: #1b2232;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  font-family: impact;
+  opacity: 0.6;
+  font-size: 28px;
+  height: 30px;
+  padding: 3px;
+}
+
+.intro {
+  background: url(background-forest.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 400px;
+  padding: 10% 0;
+  margin-top: 30px;
+}
+
+.hello {
+  font-size: 100px;
+  font-family: impact;
+  color: white;
+  width: 300px;
+  padding: 5% 0;
+  margin: 25px;
+  border: 10px double #f2f2f2;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+.flower-image img {
+  display: block;
+  max-width: 100%;
+}
+
+.flower-section {
+  background-color: #f1be8e;
+  font-size: 30px;
+  font-family: impact;
+  color: #1b2232;
+  text-align: center;
+}
+
+h2 {
+  font-family: impact;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: impact;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: Palatino;
+}
+
+.education {
+  background-color: #1b2232;
+  padding: 10%;
+}
+
+.education-text {
+  background-color: white;
+  padding: 5%;
+
+}
+
+.education-text:hover {
+  box-shadow: 15px 15px #5d5a61;
+  transform: translate (3%);
+  border: 5px solid #5d5a61;
+}
+
+
+.academy {
+  background-color: #5d5a61;
+  padding: 10%;
+
+
+
+}
+
+.academy-text {
+background-color: white;
+padding: 5%;
+
+}
+
+.academy-text:hover {
+  box-shadow: 15px 15px black;
+  transform: translate (3%);
+  border: 5px solid black;
+}
+
+
+.college {
+  background-color: #b6a692;
+  padding: 10%;
+
+}
+
+.college-text {
+ background-color: white;
+ padding: 5%;
+
+}
+
+.college-text:hover {
+  box-shadow: 15px 15px black;
+  transform: translate (3%);
+  border: 5px solid black;
+}
+
+.footer {
+
+overflow: hidden;
+
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li {
+  width: 100%;
+  text-align: center;
+  padding: 3%;
+  text-transform: uppercase;
+  font-family: impact;
+  box-sizing: border-box;
+
+}
+
+.facebook {
+  background-color: #777e7f;
+  color: white;
+
+}
+
+.facebook:active {
+  color: white;
+}
+
+.facebook:hover {
+  background-color: black;
+}
+
+.google {
+  background-color: #f0fdff;
+  color: white;
+}
+
+.google:active {
+  color: white;
+
+}
+
+.google:hover {
+  background-color: pink;
+}
+
+
+.twitter {
+  background-color: #afc8cc;
+  color: black;
+}
+
+.twitter:active {
+  color: black;
+}
+
+.twitter:hover {
+  background-color: grey;
+}
+
+@media screen and (min-width: 600px) {
+
+  header {
+    height: 60px;
+    font-size: 40px;
+  }
+
+  .intro {
+    margin-top: 60px;
+  }
+
+  .flower-section {
+    overflow: hidden;
+  }
+
+  .flower-image img{
+    width: 50%;
+    float: left;
+  }
+
+  .flower-text {
+    width: 50%;
+    float: left;
+  }
+
+  h2 {
+    font-size: 3em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
+  .education-section {
+    overflow: hidden;
+  }
+
+  .education {
+    padding: 5%;
+    box-sizing: border-box;
+  }
+
+  .academy {
+    width: 50%;
+    float: left;
+    padding: 5%;
+    box-sizing: border-box;
+
+  }
+
+  .college {
+    width: 50%;
+    float: left;
+    padding: 5%;
+    box-sizing: border-box;
+  }
+
+  li {
+    width: 33%;
+    float: left;
+  }
+
+  .footer {
+    overflow: hidden;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+
+  h2{
+    font-size: 1.5em;
+  }
+
+ .education-section {
+   overflow: hidden;
+ }
+
+ .education {
+   width: 33%;
+   float: left;
+ }
+
+ .academy {
+   width: 33%;
+   float: left;
+ }
+
+ .college {
+   width: 33%;
+   float: left;
+ }
+
+ li {
+   width: 100%;
+
+ }
+
+ .footer {
+   overflow: hidden;
+ }
+
+
+}
