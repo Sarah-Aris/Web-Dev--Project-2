@@ -43,6 +43,18 @@ table {
 }
 
 
+@font-face {
+    font-family: 'clutchee';
+    src: url('fonts/clutchee-webfont.eot');
+    src: url('fonts/clutchee-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/clutchee-webfont.woff') format('woff'),
+         url('fonts/clutchee-webfont.ttf') format('truetype'),
+         url('fonts/clutchee-webfont.svg#robotoregular') format('svg');
+    }
+
+
+
+
 
 header {
   position: fixed;
@@ -64,6 +76,12 @@ header {
   height: 400px;
   padding: 10% 0;
   margin-top: 30px;
+}
+
+.not-facebook {
+	background: url(not-facebook.jpg) no-repeat center center fixed;
+	background-size: cover;
+	height: 1000px;
 }
 
 .hello {
@@ -108,6 +126,14 @@ p {
   font-family: Palatino;
 }
 
+.flower-text {
+font-family: impact;
+font-size: 1em;
+padding: 5%;
+box-sizing: border-box;
+
+}
+
 .education {
   background-color: #1b2232;
   padding: 10%;
@@ -123,6 +149,7 @@ p {
   box-shadow: 15px 15px #5d5a61;
   transform: translate (3%);
   border: 5px solid #5d5a61;
+	padding: 4%;
 }
 
 
@@ -144,6 +171,7 @@ padding: 5%;
   box-shadow: 15px 15px black;
   transform: translate (3%);
   border: 5px solid black;
+	padding: 4%;
 }
 
 
@@ -163,6 +191,7 @@ padding: 5%;
   box-shadow: 15px 15px black;
   transform: translate (3%);
   border: 5px solid black;
+	padding: 4%;
 }
 
 .footer {
@@ -192,26 +221,37 @@ li {
 
 }
 
-.facebook:active {
-  color: white;
+
+.facebook:link {
+	color: deeppink;
+}
+
+.facebook:visited {
+	color: grey;
 }
 
 .facebook:hover {
   background-color: black;
 }
 
-.google {
+.facebook:active {
+  color: white;
+}
+
+
+
+.contact {
   background-color: #f0fdff;
   color: white;
 }
 
-.google:active {
+.contact:active {
   color: white;
 
 }
 
-.google:hover {
-  background-color: pink;
+.contact:hover {
+  background-color: black;
 }
 
 
@@ -225,7 +265,37 @@ li {
 }
 
 .twitter:hover {
-  background-color: grey;
+  background-color: black;
+}
+
+.contact-image {
+	background: url(contact-sarah.jpg) no-repeat center center fixed;
+	height: 1000px;
+	background-size: cover;
+}
+
+.contact-goodtime {
+	font-family: "clutchee";
+	font-size: 4em;
+	padding-top: 30%;
+	padding-left: 1%;
+	color: deeppink;
+}
+
+.contact-number {
+	font-family: impact;
+	font-size: 3em;
+	padding-left: 1%;
+
+}
+
+.not-facebook-text {
+
+text-align: center;
+padding-top: 15%;
+font-family: 'clutchee';
+font-size: 5em;
+color: #ff4000;
 }
 
 @media screen and (min-width: 600px) {
@@ -251,6 +321,9 @@ li {
   .flower-text {
     width: 50%;
     float: left;
+		padding-top: 0;
+
+
   }
 
   h2 {
@@ -293,6 +366,22 @@ li {
   .footer {
     overflow: hidden;
   }
+
+.contact-goodtime {
+
+font-size: 7em;
+
+/*padding-top: 40%;
+padding-left: 3%;*/
+
+}
+
+ .phone-number
+  {
+		font-size: 4.5em;
+	/*	padding-left: 5%; */
+
+	}
 }
 
 @media screen and (min-width: 1200px) {
@@ -329,5 +418,24 @@ li {
    overflow: hidden;
  }
 
+.contact-number {
+	font-size: 3em;
+}
+
+.not-facebook-text {
+	font-size: 6em;
+}
+
+/*.contact-goodtime {
+	font-size: 8em;
+	padding-top: 400px;
+	padding-left: 5%;
+}
+
+.contact-number {
+	font-size: 7em;
+	padding-top: 4%;
+	padding-left: 3%;
+}*/
 
 }
